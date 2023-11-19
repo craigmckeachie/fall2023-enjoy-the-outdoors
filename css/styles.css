@@ -1,11 +1,3 @@
-/* header{
-    background-color: lightgrey;
-}
-
-footer{
-    background-color: darkgray;
-} */
-
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
 
 body {
@@ -27,7 +19,6 @@ main {
 #section1 {
   background-image: url("../images/home/river-5900547_640.jpg");
 }
-
 
 #section2 {
   background-image: url("../images/home/cabaneros-national-park-6724690_640.jpg");
