@@ -25,5 +25,10 @@ main {
 }
 
 #section1 {
+  background-image: url("../images/home/river-5900547_640.jpg");
+}
+
+
+#section2 {
   background-image: url("../images/home/cabaneros-national-park-6724690_640.jpg");
 }
