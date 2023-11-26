@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Arial", sans-serif;
+      }
+
+      section {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2em;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 1s, transform 1s;
+      }
+
+      .visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      #section1{
+        background-color: red;
+      }
+      #section2{
+        background-color: green;
+      }
+      #section3{
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="section1" class="scroll-section">Section 1</section>
+    <section id="section2" class="scroll-section">Section 2</section>
+    <section id="section3" class="scroll-section">Section 3</section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll(".scroll-section");
+
+        function checkScroll() {
+          sections.forEach((section) => {
+            const sectionTop = section.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (sectionTop < windowHeight * 0.75) {
+              section.classList.add("visible");
+            } else {
+              section.classList.remove("visible");
+            }
+          });
+        }
+
+        document.addEventListener("scroll", checkScroll);
+        checkScroll(); // Check initially in case some sections are already in view.
+      });
+    </script>
+  </body>
+</html>

@@ -12,6 +12,22 @@
     </style>
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      .btn-outline-primary {
+        opacity: 1;
+        transition: opacity 0.3s;
+        transition: background-color 0.3s;
+      }
+      .btn-outline-primary:hover {
+        opacity: 0.6;
+      }
+      .scaleUp {
+        transition: transform 0.3s;
+      }
+      .scaleUp:hover {
+        transform: scale(1.03);
+      }
+    </style>
   </head>
   <body>
     <header class="py-5 border-body bg-body-secondary">
@@ -33,10 +49,10 @@
         </nav>
       </div>
     </header>
-    <main class="animate__animated animate__fadeIn1">
+    <main>
       <section id="section1" class="py-5 parallax-section d-flex align-items-center">
         <div class="container">
-          <h1 class="text-light animate__animated animate__backInLeft1">Nurture Yourself with Nature</h1>
+          <h1 class="text-light animate__animated animate__backInLeft">Nurture Yourself with Nature</h1>
         </div>
       </section>
 
@@ -125,7 +141,7 @@
       </section>
       <section class="py-5">
         <div class="container d-flex gap-5">
-          <img class="rounded" src="images/home/river-5765785_640.jpg" alt="Cabaneros National Park" />
+          <img class="rounded scaleUp" src="images/home/river-5765785_640.jpg" alt="Cabaneros National Park" />
           <div class="w-50">
             <h3>Lorem ipsum dolor sit amet</h3>
             <p class="lead">
