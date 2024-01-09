@@ -5,12 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
-    <style>
-      /* :root {
-        --animate-duration: 2s;
-      } */
-    </style>
-    <link rel="stylesheet" href="css/animate.css" />
+    <!-- <link rel="stylesheet" href="css/animate.css" /> -->
     <link rel="stylesheet" href="css/styles.css" />
     <style>
       .btn-outline-primary {
@@ -26,6 +21,30 @@
       }
       .scaleUp:hover {
         transform: scale(1.03);
+      }
+      /* Set initial styles for the image */
+      .animated-image {
+        opacity: 0;
+        transform: translateY(20px); /* Move the image down initially */
+        transition: opacity 0.5s, transform 0.5s;
+      }
+
+      /* Add a class to trigger the animation when the image is in the viewport */
+      .animate-in {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Define a keyframe animation for the fade-in effect */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
     </style>
   </head>
@@ -64,18 +83,19 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum a pariatur amet facilis! Delectus doloremque
               facere neque porro explicabo dolor inventore recusandae adipisci.
             </p>
-            <button class="btn btn-lg btn-outline-primary">Explore</button>
+            <button class="btn btn-lg btn-outline-primary trigger">Explore</button>
             <p class="mt-4">
               <small class="text-body-secondary"
                 >Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, repellat temporibus!</small
               >
             </p>
           </div>
+
           <div class="d-flex align-items-end">
-            <img class="rounded" src="images/home/river-5765785_640.jpg" alt="" />
+            <img class="rounded animated-image" src="images/home/river-5765785_640.jpg" alt="" />
           </div>
           <div class="overflow-x-hidden">
-            <img class="rounded" src="images/home/mormon-row-barn-3759_640.jpg" alt="Mormon Row Barn" />
+            <img class="rounded animated-image" src="images/home/mormon-row-barn-3759_640.jpg" alt="Mormon Row Barn" />
           </div>
         </div>
       </div>
@@ -185,5 +205,20 @@
       </div>
     </footer>
     <!-- <script src="scripts/bootstrap.bundle.js"></script> -->
+    <script>
+      // Add a scroll event listener to trigger the animation
+      window.addEventListener("scroll", function () {
+        const trigger = document.querySelector(".trigger");
+        const animatedImages = document.querySelectorAll(".animated-image");
+
+        // Get the position of the trigger element
+        const triggerPosition = trigger.getBoundingClientRect().top;
+
+        // Check if the trigger element is in the viewport
+        if (triggerPosition < window.innerHeight) {
+          animatedImages.forEach((img) => img.classList.add("animate-in"));
+        }
+      });
+    </script>
   </body>
 </html>
