@@ -23,3 +23,13 @@ main {
 #section2 {
   background-image: url("../images/home/cabaneros-national-park-6724690_640.jpg");
 }
+
+a {
+  --bs-link-color-rgb: 0, 122, 255 ;
+}
+
+.nav-pills {
+  --bs-nav-pills-border-radius: var(--bs-border-radius);
+  --bs-nav-pills-link-active-color: #fff;
+  --bs-nav-pills-link-active-bg: #007aff;
+}
