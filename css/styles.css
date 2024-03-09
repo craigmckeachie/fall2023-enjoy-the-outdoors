@@ -29,7 +29,11 @@ a {
 }
 
 .nav-pills {
-  --bs-nav-pills-border-radius: var(--bs-border-radius);
+  /* --bs-nav-pills-border-radius: var(--bs-border-radius); */
   --bs-nav-pills-link-active-color: #fff;
   --bs-nav-pills-link-active-bg: #007aff;
+}
+
+.nav {
+    --bs-nav-link-padding-y: .6rem;
 }
