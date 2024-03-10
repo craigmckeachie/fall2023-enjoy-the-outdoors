@@ -25,7 +25,7 @@ main {
 }
 
 a {
-  --bs-link-color-rgb: 0, 122, 255 ;
+  --bs-link-color-rgb: 0, 122, 255;
 }
 
 .nav-pills {
@@ -35,5 +35,15 @@ a {
 }
 
 .nav {
-    --bs-nav-link-padding-y: .6rem;
+  --bs-nav-link-padding-y: 0.6rem;
+}
+
+.request-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+table th {
+    width: auto !important;
 }

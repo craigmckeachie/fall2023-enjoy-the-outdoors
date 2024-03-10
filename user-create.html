@@ -58,7 +58,7 @@
         <ul class="nav nav-pills flex-column mb-auto">
           <li class="text-secondary fw-bold mb-2">Purchase</li>
           <li>
-            <a href="requests.html" class="nav-link active">
+            <a href="#" class="nav-link active">
               <svg class="bi pe-none me-2" width="16" height="16" fill="#FFFFFF">
                 <use xlink:href="./images/bootstrap-icons.svg#cart"></use>
               </svg>
@@ -94,70 +94,42 @@
 
       <section class="content container-fluid mx-5 my-2 py-4">
         <div class="d-flex justify-content-between pb-4 mb-5 border-bottom border-2">
-          <h2>Requests</h2>
-          <a href="request-create.html" class="btn btn-primary">
-            <svg class="bi pe-none me-2" width="32" height="32" fill="#FFFFFF">
-              <use xlink:href="./images/bootstrap-icons.svg#plus"></use>
-            </svg>
-            Create a request
-          </a>
+          <h2>New Request</h2>
         </div>
-        <table class="table table-hover w-50">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Description</th>
-              <th scope="col">Status</th>
-              <th scope="col">Total</th>
-              <th scope="col">Requested By</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>
-                Supplies for Offsite Meeting <br />
-                <span class="text-body-secondary small text-wrap">Team Building/Goal Setting</span>
-              </td>
-
-              <td><span class="badge text-bg-info">Pending</span></td>
-              <td>$600</td>
-              <td>
-                Otto Graham
-                <br />
-                <span class="text-body-secondary small text-wrap">Pickup</span>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>
-                Office Supplies<br />
-                <span class="text-body-secondary small text-wrap">Budgeted Materials</span>
-              </td>
-              <td><span class="badge text-bg-success">Approved</span></td>
-              <td>$1200</td>
-              <td>
-                Dave Mathews
-                <br />
-                <span class="text-body-secondary small text-wrap">Delivery</span>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>
-                Routers<br />
-                <span class="text-body-secondary small text-wrap">Improve Network Speed</span>
-              </td>
-              <td><span class="badge text-bg-warning">Review</span></td>
-              <td>$20,000</td>
-              <td>
-                Ron Weasley
-                <br />
-                <span class="text-body-secondary small text-wrap">Signature Delivery</span>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <form class="form">
+          <div class="mb-3">
+            <label for="" class="form-label">Description</label>
+            <input type="text" class="form-control" placeholder="Enter a brief description for your purchase request" />
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label">Justification</label>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              class="form-control"
+              placeholder="Enter a justification for your purchase request"
+            ></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label">Delivery Method</label>
+            <select name="" id="" class="form-select">
+              <option value="">Select...</option>
+              <option value="">Pickup</option>
+              <option value="">Delivery</option>
+              <option value="">Signature Delivery</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <button class="btn btn-primary">
+              <svg class="bi pe-none me-2" width="16" height="16" fill="#FFFFFF">
+                <use xlink:href="./images/bootstrap-icons.svg#save"></use>
+              </svg>
+              Save request
+            </button>
+          </div>
+        </form>
       </section>
     </main>
   </body>

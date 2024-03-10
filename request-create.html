@@ -44,7 +44,7 @@
       </div>
     </header>
     <main class="d-flex">
-      <div
+      <nav
         class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary border-end min-vh-100 position-sticky"
         style="width: 280px"
       >
@@ -58,7 +58,7 @@
         <ul class="nav nav-pills flex-column mb-auto">
           <li class="text-secondary fw-bold mb-2">Purchase</li>
           <li>
-            <a href="#" class="nav-link active">
+            <a href="requests.html" class="nav-link active">
               <svg class="bi pe-none me-2" width="16" height="16" fill="#FFFFFF">
                 <use xlink:href="./images/bootstrap-icons.svg#cart"></use>
               </svg>
@@ -90,45 +90,94 @@
             </a>
           </li>
         </ul>
-      </div>
+      </nav>
 
-      <section class="container-fluid mx-5 my-2 py-4">
+      <section class="content container-fluid mx-5 my-2 py-4">
         <div class="d-flex justify-content-between pb-4 mb-5 border-bottom border-2">
           <h2>New Request</h2>
-          <!-- <button class="btn btn-primary">
-            <svg class="bi pe-none me-2" width="16" height="16" fill="#FFFFFF">
-              <use xlink:href="./images/bootstrap-icons.svg#save"></use>
-            </svg>
-            Save request
-          </button> -->
         </div>
         <form class="form">
-          <div class="mb-3">
-            <label for="" class="form-label">Description</label>
-            <input type="text" class="form-control" placeholder="Enter a brief description for your purchase request" />
+          <div class="request-header">
+            <div class="column1 w-75">
+              <div class="mb-3">
+                <label for="" class="form-label">Description</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter a brief description for your purchase request"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Justification</label>
+                <input type="text" class="form-control" placeholder="Enter a justification for your purchase request" />
+              </div>
+            </div>
+            <div class="column2 w-50">
+              <div class="mb-3">
+                <label for="" class="form-label">Delivery Method</label>
+                <select name="" id="" class="form-select">
+                  <option value="">Select...</option>
+                  <option value="">Pickup</option>
+                  <option value="">Delivery</option>
+                  <option value="">Signature Delivery</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="form-label">Status</label>
+                <select name="" id="" disabled readonly class="form-select">
+                  <option value="">New</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="form-label">Requested By</label>
+                <input readonly disabled readonly class="form-control" value="James Roday" />
+              </div>
+            </div>
           </div>
-          <div class="mb-3">
-            <label for="" class="form-label">Justification</label>
-
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              class="form-control"
-              placeholder="Enter a justification for your purchase request"
-            ></textarea>
+          <div class="card p-4">
+            <h5 class="card-title">Items</h5>
+            <table class="table w-50">
+              <thead>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Amount</th>
+                <th>Action</th>
+              </thead>
+              <tbody>
+                <td>
+                  <select name="" id="" class="form-select">
+                    <option value="">Select...</option>
+                    <option value="">Echo</option>
+                    <option value="">College Ruled Notebook</option>
+                  </select>
+                </td>
+                <td>
+                  <input type="number" class="form-control" />
+                </td>
+                <td><span class="form-label">$0.00</span></td>
+                <td>
+                  <svg class="bi pe-none me-2" width="16" height="16" fill="#007AFF">
+                    <use xlink:href="./images/bootstrap-icons.svg#trash"></use>
+                  </svg>
+                </td>
+              </tbody>
+              <tfoot>
+                <td>
+                  <button class="btn btn-outline-primary">
+                    <svg class="bi pe-none me-2" width="16" height="16" fill="#007AFF">
+                      <use xlink:href="./images/bootstrap-icons.svg#plus-circle"></use>
+                    </svg>
+                    Add a line
+                  </button>
+                </td>
+                <td></td>
+                <td>Total: $0.00</td>
+                <td></td>
+              </tfoot>
+            </table>
           </div>
-          <div class="mb-3">
-            <label for="" class="form-label">Delivery Method</label>
-            <select name="" id="" class="form-select">
-              <option value="">Select...</option>
-              <option value="">Pickup</option>
-              <option value="">Delivery</option>
-              <option value="">Signature Delivery</option>
-            </select>
-          </div>
-          <div class="mb-3">
+          <div class="d-flex justify-content-end mt-4">
+            <button class="btn btn-outline-primary me-2">Cancel</button>
             <button class="btn btn-primary">
               <svg class="bi pe-none me-2" width="16" height="16" fill="#FFFFFF">
                 <use xlink:href="./images/bootstrap-icons.svg#save"></use>
