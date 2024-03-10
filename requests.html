@@ -93,7 +93,7 @@
       </nav>
 
       <section class="content container-fluid mx-5 my-2 py-4">
-        <div class="d-flex justify-content-between pb-4 mb-5 border-bottom border-2">
+        <div class="d-flex justify-content-between pb-4 mb-4 border-bottom border-2">
           <h2>Requests</h2>
           <a href="request-create.html" class="btn btn-primary">
             <svg class="bi pe-none me-2" width="32" height="32" fill="#FFFFFF">
@@ -101,6 +101,15 @@
             </svg>
             Create a request
           </a>
+        </div>
+        <div class="d-flex flex-column mb-4 w-25">
+          <label for="status" class="form-label">Status</label>
+          <select id="status" class="form-select">
+            <option value="">All</option>
+            <option value="">New</option>
+            <option value="">Pending Review</option>
+            <option value="">Approved</option>
+          </select>
         </div>
         <table class="table table-hover w-50">
           <thead>
@@ -148,7 +157,7 @@
                 Routers<br />
                 <span class="text-body-secondary small text-wrap">Improve Network Speed</span>
               </td>
-              <td><span class="badge text-bg-warning">Review</span></td>
+              <td><span class="badge text-bg-warning">Pending Review</span></td>
               <td>$20,000</td>
               <td>
                 Ron Weasley
