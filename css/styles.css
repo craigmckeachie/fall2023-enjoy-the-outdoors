@@ -45,5 +45,21 @@ a {
 }
 
 table th {
-    width: auto !important;
+  width: auto !important;
+}
+
+.card > .progress {
+  height: 0.1875rem;
+  background: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.list .card:hover {
+  background-color: var(--bs-tertiary-bg);
+  transform: scale(1.025);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px;
 }
