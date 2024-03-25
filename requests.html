@@ -81,7 +81,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="nav-link link-body-emphasis">
+            <a href="users.html" class="nav-link link-body-emphasis">
               <svg class="bi pe-none me-2" width="16" height="16" fill="#007AFF">
                 <use xlink:href="./images/bootstrap-icons.svg#people"></use>
               </svg>
@@ -110,192 +110,199 @@
             <option value="">Approved</option>
           </select>
         </div>
-        <table class="table table-hover w-75 table">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Description</th>
-              <th scope="col">Status</th>
-              <th scope="col">Total</th>
-              <th scope="col">Requested By</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>
-                Supplies for Offsite Meeting <br />
-                <span class="text-body-secondary small text-wrap">Team Building/Goal Setting</span>
-              </td>
 
-              <td><span class="badge text-bg-info">New</span></td>
-              <td>$600</td>
-              <td>
-                Otto Graham
-                <br />
-                <span class="text-body-secondary small text-wrap">Pickup</span>
-              </td>
-              <td>
-                <div class="dropdown">
-                  <button
-                    class="btn btn-light"
-                    style="background: none"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <svg class="bi pe-none me-2" width="20" height="20" fill="#007AFF">
-                      <use xlink:href="./images/bootstrap-icons.svg#three-dots-vertical"></use>
-                    </svg>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a href="request-view.html" class="dropdown-item" type="button">View</a></li>
-                    <li><a href="request-edit.html" class="dropdown-item" type="button">Edit</a></li>
-                    <li>
-                      <button
-                        class="dropdown-item"
-                        type="button"
-                        onclick="confirm('Are you sure you want to delete this request?')"
-                      >
-                        Delete
-                      </button>
-                    </li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>
-                Office Supplies<br />
-                <span class="text-body-secondary small text-wrap">Budgeted Materials</span>
-              </td>
-              <td><span class="badge text-bg-warning">Pending Review</span></td>
-              <td>$1200</td>
-              <td>
-                Dave Mathews
-                <br />
-                <span class="text-body-secondary small text-wrap">Delivery</span>
-              </td>
-              <td>
-                <div class="dropdown">
-                  <button
-                    class="btn btn-light"
-                    style="background: none"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <svg class="bi pe-none me-2" width="20" height="20" fill="#007AFF">
-                      <use xlink:href="./images/bootstrap-icons.svg#three-dots-vertical"></use>
-                    </svg>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a href="request-view.html" class="dropdown-item" type="button">Review</a></li>
-                    <li><a href="request-edit.html" class="dropdown-item" type="button">Edit</a></li>
-                    <li>
-                      <button
-                        class="dropdown-item"
-                        type="button"
-                        onclick="confirm('Are you sure you want to delete this request?')"
-                      >
-                        Delete
-                      </button>
-                    </li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>
-                Routers<br />
-                <span class="text-body-secondary small text-wrap">Improve Network Speed</span>
-              </td>
+        <section class="list d-flex flex-row flex-wrap bg-body-tertiary gap-5 p-4 rounded-4">
+          <table class="table table-hover w-75 table rounded-4">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Description</th>
+                <th scope="col">Status</th>
+                <th scope="col">Total</th>
+                <th scope="col">Requested By</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>
+                  Supplies for Offsite Meeting <br />
+                  <span class="text-body-secondary small text-wrap">Team Building/Goal Setting</span>
+                </td>
 
-              <td><span class="badge text-bg-success">Approved</span></td>
-              <td>$20,000</td>
-              <td>
-                Ron Weasley
-                <br />
-                <span class="text-body-secondary small text-wrap">Signature Delivery</span>
-              </td>
-              <td>
-                <div class="dropdown">
-                  <button
-                    class="btn btn-light"
-                    style="background: none"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <svg class="bi pe-none me-2" width="20" height="20" fill="#007AFF">
-                      <use xlink:href="./images/bootstrap-icons.svg#three-dots-vertical"></use>
-                    </svg>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a href="request-view.html" class="dropdown-item" type="button">Review</a></li>
-                    <li><a href="request-edit.html" class="dropdown-item" type="button">Edit</a></li>
-                    <li>
-                      <button
-                        class="dropdown-item"
-                        type="button"
-                        onclick="confirm('Are you sure you want to delete this request?')"
-                      >
-                        Delete
-                      </button>
-                    </li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">4</th>
-              <td>
-                Storage Cabinet <br />
-                <span class="text-body-secondary small text-wrap">Securely Store Legal Documents</span>
-              </td>
+                <td><span class="badge text-bg-info">New</span></td>
+                <td>$600</td>
+                <td>
+                  Otto Graham
+                  <br />
+                  <span class="text-body-secondary small text-wrap">Pickup</span>
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-light"
+                      style="background: none"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <svg class="bi pe-none me-2" width="20" height="20" fill="#007AFF">
+                        <use xlink:href="./images/bootstrap-icons.svg#three-dots-vertical"></use>
+                      </svg>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="request-view.html" class="dropdown-item" type="button">View</a></li>
+                      <li><a href="request-edit.html" class="dropdown-item" type="button">Edit</a></li>
+                      <li>
+                        <button
+                          class="dropdown-item"
+                          type="button"
+                          onclick="confirm('Are you sure you want to delete this request?')"
+                        >
+                          Delete
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>
+                  Office Supplies<br />
+                  <span class="text-body-secondary small text-wrap">Budgeted Materials</span>
+                </td>
+                <td><span class="badge text-bg-warning">Pending Review</span></td>
+                <td>$1200</td>
+                <td>
+                  Dave Mathews
+                  <br />
+                  <span class="text-body-secondary small text-wrap">Delivery</span>
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-light"
+                      style="background: none"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <svg class="bi pe-none me-2" width="20" height="20" fill="#007AFF">
+                        <use xlink:href="./images/bootstrap-icons.svg#three-dots-vertical"></use>
+                      </svg>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="request-view.html" class="dropdown-item" type="button">Review</a></li>
+                      <li><a href="request-edit.html" class="dropdown-item" type="button">Edit</a></li>
+                      <li>
+                        <button
+                          class="dropdown-item"
+                          type="button"
+                          onclick="confirm('Are you sure you want to delete this request?')"
+                        >
+                          Delete
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>
+                  Routers<br />
+                  <span class="text-body-secondary small text-wrap">Improve Network Speed</span>
+                </td>
 
-              <td><span class="badge text-bg-info">New</span></td>
-              <td>$325</td>
-              <td>
-                Kathleen Madigan
-                <br />
-                <span class="text-body-secondary small text-wrap">Pickup</span>
-              </td>
-              <td>
-                <div class="dropdown">
-                  <button
-                    class="btn btn-light"
-                    style="background: none"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <svg class="bi pe-none me-2" width="20" height="20" fill="#007AFF">
-                      <use xlink:href="./images/bootstrap-icons.svg#three-dots-vertical"></use>
-                    </svg>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a href="request-view.html" class="dropdown-item" type="button">View</a></li>
-                    <li><a href="request-edit.html" class="dropdown-item" type="button">Edit</a></li>
-                    <li>
-                      <button
-                        class="dropdown-item"
-                        type="button"
-                        onclick="confirm('Are you sure you want to delete this request?')"
-                      >
-                        Delete
-                      </button>
-                    </li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+                <td><span class="badge text-bg-success">Approved</span></td>
+                <td>$20,000</td>
+                <td>
+                  Ron Weasley
+                  <br />
+                  <span class="text-body-secondary small text-wrap">Signature Delivery</span>
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-light"
+                      style="background: none"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <svg class="bi pe-none me-2" width="20" height="20" fill="#007AFF">
+                        <use xlink:href="./images/bootstrap-icons.svg#three-dots-vertical"></use>
+                      </svg>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="request-view.html" class="dropdown-item" type="button">Review</a></li>
+                      <li><a href="request-edit.html" class="dropdown-item" type="button">Edit</a></li>
+                      <li>
+                        <button
+                          class="dropdown-item"
+                          type="button"
+                          onclick="confirm('Are you sure you want to delete this request?')"
+                        >
+                          Delete
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>
+                  Storage Cabinet <br />
+                  <span class="text-body-secondary small text-wrap">Securely Store Legal Documents</span>
+                </td>
+
+                <td><span class="badge text-bg-info">New</span></td>
+                <td>$325</td>
+                <td>
+                  Kathleen Madigan
+                  <br />
+                  <span class="text-body-secondary small text-wrap">Pickup</span>
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-light"
+                      style="background: none"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <svg class="bi pe-none me-2" width="20" height="20" fill="#007AFF">
+                        <use xlink:href="./images/bootstrap-icons.svg#three-dots-vertical"></use>
+                      </svg>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="request-view.html" class="dropdown-item" type="button">View</a></li>
+                      <li><a href="request-edit.html" class="dropdown-item" type="button">Edit</a></li>
+                      <li>
+                        <button
+                          class="dropdown-item"
+                          type="button"
+                          onclick="confirm('Are you sure you want to delete this request?')"
+                        >
+                          Delete
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
       </section>
+      <div
+        class="slanted bg-gradient bg-secondary-subtle z-n1 position-absolute"
+        style="height: 24rem; width: 100%; top: 65%"
+      ></div>
     </main>
     <script src="/js/bootstrap.bundle.js"></script>
   </body>
