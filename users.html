@@ -22,6 +22,7 @@
             </svg>
             <span class="small mx-2 fw-semibold">Purchase Request System</span>
           </a>
+
           <div class="dropdown me-4">
             <a
               href="#"
@@ -92,8 +93,31 @@
       </nav>
 
       <section class="content container-fluid mx-5 my-2 py-4">
-        <div class="d-flex justify-content-between pb-4 mb-4 border-bottom border-2">
+        <div class="d-flex align-items-baseline justify-content-between pb-4 mb-4 border-bottom border-2">
           <h2>Users</h2>
+
+          <div
+            class="toast align-items-center text-bg-success border-0"
+            role="alert"
+            aria-live="assertive"
+            aria-atomic="true"
+          >
+            <div class="d-flex">
+              <div class="toast-body">
+                <svg class="bi pe-none me-2" width="32" height="32" fill="#ffffff">
+                  <use xlink:href="./images/bootstrap-icons.svg#check"></use>
+                </svg>
+                Successfully saved
+              </div>
+              <button
+                type="button"
+                class="btn-close btn-close-white me-2 m-auto"
+                data-bs-dismiss="toast"
+                aria-label="Close"
+              ></button>
+            </div>
+          </div>
+
           <a href="user-create.html" class="btn btn-primary">
             <svg class="bi pe-none me-2" width="32" height="32" fill="#FFFFFF">
               <use xlink:href="./images/bootstrap-icons.svg#plus"></use>
@@ -289,6 +313,14 @@
         </section>
       </section>
     </main>
+
     <script src="/js/bootstrap.bundle.js"></script>
+    <script>
+      const message = localStorage.getItem("toast");
+      if (message) {
+        document.querySelector(".toast").style.display = "block";
+        localStorage.clear();
+      }
+    </script>
   </body>
 </html>
